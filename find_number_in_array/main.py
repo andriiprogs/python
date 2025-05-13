@@ -1,16 +1,16 @@
 def find_number_in_array(array, target):
     for i in range(len(array)):
         if array[i] == target:
-            return i  # возвращает индекс найденного элемента
-    return -1  # если число не найдено
+            return i  # returns the index of the found element
+    return -1  # if the number is not found
 
-# Пример использования
+# Example usage
 numbers = [3, 7, 1, 9, 5]
 target_number = 9
 
 index = find_number_in_array(numbers, target_number)
 
 if index != -1:
-    print(f"Число {target_number} найдено на позиции {index}.")
+    print(f"The number {target_number} was found at position {index}.")
 else:
-    print(f"Число {target_number} не найдено в массиве.")
+    print(f"The number {target_number} was not found in the array.")
